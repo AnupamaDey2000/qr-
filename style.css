@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background:linear-gradient(45deg,rgb(27, 0, 82),rgb(0, 51, 8),rgb(51, 0, 64),rgb(66, 0, 0));
+    background-size: 300% 300%;
+    animation: color 7s ease-in-out infinite;
+  }
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+
+      }
+    50%{
+        background-position: 100% 50%;
+
+    }
+    100%{
+        background-position: 0 50%;
+
+    }
+  }
+
+  .container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  background:linear-gradient(45deg,rgb(255, 119, 119),rgb(255, 225, 205),rgb(245, 203, 255),rgb(255, 255, 255));
+  box-shadow: inset 0px 2px 7px rgb(196, 133, 250),inset 0px -2px 7px rgb(191, 158, 241) ;
+
+    max-width: 400px;
+    width: 100%;
+    cursor: pointer;
+    transition:.3s;
+  }
+    .container:hover{
+  box-shadow: inset 0px 2px 7px rgb(206, 133, 250),inset 0px -2px 7px rgb(0, 0, 0) ;
+      background:linear-gradient(270deg,rgb(44, 69, 196),rgb(137, 181, 195));
+
+    color: white;
+    transform: translateY(-10px);
+    }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #qrCodeContainer {
+    margin-top: 20px;
+  }
+
+  .glass{
+         margin-left: 40px;
+
+          position: relative;
+          width: 600px;
+          padding: 20px;
+          padding-left: 20px;
+          background: rgba(255, 255, 255, 0.1);
+          box-shadow: 0px 12px 16px 0px rgba(118, 118, 118, 0.24),0 17px 50px 0 rgba(88, 88, 88, 0.19);
+          border-radius: 15px;
+
+          backdrop-filter: blur(35px);
+          -webkit-backdrop-filter: blur(10px); /* For Safari */
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          color: rgb(153, 75, 255);
+          text-align: center;
+          cursor:pointer;
+          transition:0.5s;
+      }
